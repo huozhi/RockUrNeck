@@ -1,3 +1,5 @@
+var V_2048 = 2048
+
 function GameManager(size, InputManager, Actuator, StorageManager) {
   this.size           = size; // Size of the grid
   this.inputManager   = new InputManager;
@@ -171,7 +173,7 @@ GameManager.prototype.move = function (direction) {
           self.score += merged.value;
 
           // The mighty 2048 tile
-          if (merged.value === 16) {
+          if (merged.value === V_2048) {
             self.won = true;
             var endDate = new Date();
             endtime = endDate.getTime();

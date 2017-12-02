@@ -68,7 +68,7 @@ var time = 10;
 			if(event.height>175)
 			{
 				ienum.innerHTML = "please farer";
-				return ;						
+				return ;
 			}
 			else if(event.height<155)
 			{
@@ -87,7 +87,7 @@ var time = 10;
 			overlayContext.clearRect(0,0,320,240);
 			// once we have stable tracking, draw rectangle
 			if (event.detection == "CS") {
-				
+
 			}
 			if(event.angle > 1.7 && event.height > 150)
 			{

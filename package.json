@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test": "supervisor ./bin/www"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.8.1",
@@ -12,9 +12,10 @@
     "ejs": "~0.8.5",
     "express": "~4.9.0",
     "express-session": "^1.9.1",
-    "mongodb": "^1.4.20",
     "morgan": "~1.3.0",
-    "serve-favicon": "~2.1.3",
     "socket.io": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
   }
 }

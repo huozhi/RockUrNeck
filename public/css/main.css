@@ -8,7 +8,7 @@ html, body {
   font-size: 18px; }
 
 body {
-  margin: 80px 0; }
+  margin: 0; }
 
 .heading:after {
   content: "";
@@ -116,8 +116,9 @@ hr {
   margin-bottom: 30px; }
 
 .container {
-  width: 500px;
-  margin: 0 auto; }
+  padding: 20px;
+  margin: 0 auto;
+}
 
 @-webkit-keyframes fade-in {
   0% {
@@ -138,6 +139,7 @@ hr {
   100% {
     opacity: 1; } }
 .game-container {
+  display: inline-block;
   margin-top: 40px;
   position: relative;
   padding: 15px;
@@ -504,11 +506,13 @@ hr {
 
 @media screen and (max-width: 520px) {
   html, body {
-    font-size: 15px; }
+    font-size: 15px;
+  }
 
   body {
-    margin: 20px 0;
-    padding: 0 20px; }
+    margin: 0;
+    padding: 0;
+  }
 
   h1.title {
     font-size: 27px;
@@ -709,3 +713,8 @@ hr {
     margin-top: 90px !important; }
   .game-message .lower {
     margin-top: 30px !important; } }
+
+.videos {
+  max-width: 320px;
+  display: inline-block;
+}
