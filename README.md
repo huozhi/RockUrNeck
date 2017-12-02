@@ -9,6 +9,8 @@ npm start
 # visit localhost:3000
 ```
 
+Make sure your latop or pc's camera is OPEN and available for web browser
+
 ## About
 
 A neck relaxing app for coders. Control you head to move left, right, up and

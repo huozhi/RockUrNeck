@@ -2,21 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>neck care game</title>
+  <title>Rock Your Neck!!</title>
 
   <link href="/css/main.css" rel="stylesheet" type="text/css">
-
-  <!-- <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
-  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
-  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui"> -->
-  <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 
 </head>
 <body>
@@ -31,7 +22,6 @@
     </div>
 
     <div class="above-game">
-      <p class="game-intro">Rolling you neck to get more <strong>SCORES!</strong></p>
       <a class="restart-button">Reset Game</a>
     </div>
 
@@ -75,13 +65,14 @@
 
       </div>
     </div>
-    <canvas id="compare" width="320" height="240" style="display:none"></canvas>
+
     <div class="videos">
   		<video id="vid" autoplay loop width="320" height="240"></video>
       <canvas id="debug" width="320" height="240"></canvas>
     </div>
 
 		<canvas id="overlay" width="320" height="240"></canvas>
+    <canvas id="compare" width="320" height="240" style="display:none"></canvas>
 
 		<div id="ienum"></div>
 		<div id="realtime"></div>
@@ -90,10 +81,8 @@
 		<p><input type="button" onclick="htracker.stop();htracker.start();" value="reinitiate facedetection"></input>
 
   </div>
+  <script src="/js/throttle.js"></script>
   <script src="/js/headtrackr.js"></script>
-  <script src="/js/bind_polyfill.js"></script>
-  <script src="/js/classlist_polyfill.js"></script>
-  <script src="/js/animframe_polyfill.js"></script>
   <script src="/js/keyboard_input_manager.js"></script>
   <script src="/js/html_actuator.js"></script>
   <script src="/js/grid.js"></script>
